@@ -1,31 +1,34 @@
 package CH2_Elementary_prog_DL;
 import java.util.Scanner;
+/*This code calculates grade on the basis of marks and 
+attendence ,also uses nested condition: if grade is A+
+and attendence is less than 75 grade reduced to----->A due to low attendence*/
 
 public class GradingSystem {
     public static void main(String[] args) {
         float marks;
-        float attendence;
+        float attendance;
         Scanner Sc = new Scanner(System.in);
-        System.out.print("Enter ur marks between 1 and 100: ");
+        System.out.print("Enter your marks between 1 and 100: ");
         marks = Sc.nextFloat();
-        System.out.print("Enter ur attendence in persentage without % sign");
-        attendence = Sc.nextFloat();
+        System.out.print("Enter your  attendence in persentage without % sign");
+        attendance = Sc.nextFloat();
         if(marks >=85 && marks <100){
-            if(attendence >= 75){
-                System.out.println(" garde A+");
+            if(attendance >= 75){
+                System.out.println(" grade A+");
             }
             else
             System.out.println("Grade A");
         }
         else if(marks >=70){
-            if(attendence >= 75){
+            if(attendance >= 75){
                 System.out.println("grade A");
             }
             else
                 System.out.println("grade B+");
         }
         else if(marks >= 60){
-            if(attendence >=75){
+            if(attendance >=75){
             System.out.println("grade B+");
             }
             else 
@@ -33,21 +36,21 @@ public class GradingSystem {
 
         }
         else if(marks >= 50){
-            if(attendence>=75){
+            if(attendance>=75){
                 System.out.println("grade B");
             }
             else
                 System.out.println("grade c+");
         }
         else if(marks => 40){
-            if(attendence >= 75){
+            if(attendance >= 75){
                 System.out.println("grade c+ "); 
             }
             else
                 System.out.println("grade c");
         }
         else if (marks<40){
-            if(attendence >=75){
+            if(attendance >=75){
                 System.out.println("grade c ");
             }
             else
@@ -62,3 +65,4 @@ public class GradingSystem {
     
 
 }
+
