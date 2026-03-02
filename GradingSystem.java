@@ -39,14 +39,14 @@ public class GradingSystem {
             else
                 System.out.println("grade c+");
         }
-        else if(marks > 40){
+        else if(marks => 40){
             if(attendence >= 75){
                 System.out.println("grade c+ "); 
             }
             else
                 System.out.println("grade c");
         }
-        else if (marks>=40){
+        else if (marks<40){
             if(attendence >=75){
                 System.out.println("grade c ");
             }
@@ -60,4 +60,5 @@ public class GradingSystem {
         
     }
     
+
 }
