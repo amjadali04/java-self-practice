@@ -1,5 +1,4 @@
 package CH2_Elementary_prog_DL;
-import java.lang.reflect.Array;
 import java.util.Scanner;
 
 public class oneD_ArrayAvg {
@@ -13,7 +12,7 @@ public class oneD_ArrayAvg {
              sum+=array[i];
              
         }
-        float avg = sum/array.length;
+        float avg = (float) sum / array.length;
         System.out.println("your average of array elements is : "+avg);
         
     }
